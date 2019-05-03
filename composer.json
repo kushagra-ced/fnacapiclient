@@ -5,7 +5,7 @@
     "require": {
         "zendframework/zend-http" : "2.3.2",
         "zendframework/zend-uri" : "2.3.2",
-        "zendframework/zend-validator" : "2.3.2",
+        "zendframework/zend-validator" : "^2.10.1",
         "monolog/monolog" : "1.*",
         "symfony/finder" : "2.0.*",
         "symfony/http-foundation": "2.3.*@dev",
