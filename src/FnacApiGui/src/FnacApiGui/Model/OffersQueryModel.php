@@ -68,20 +68,16 @@ class OffersQueryModel extends Model
   public function updateOffer($client, $options)
   {    
     extract($options);
-   
     $offer = new Offer();
-    $offer->setOfferReferenceType(OfferReferenceType::SELLER_SKU);
-    $offer->setOfferReference($offer_sku);
-    $offer->setQuantity($quantity);
-    $offer->setPrice($price);
-    $offer->setDescription($description);
-
+      $offer->setOfferReferenceType($options['product_reference_type']);
+      $offer->setOfferReference($options['offre_reference']);
+      $offer->setQuantity($options['quantity']);
+      $offer->setPrice($options['price']['price']);
     $offerUpdate = new OfferUpdate();
     $offerUpdate->addOffer($offer);
 
     //Call the service
     $offerUpdateResponse = $client->callService($offerUpdate);
-        
     return $offerUpdateResponse;
   }
   
