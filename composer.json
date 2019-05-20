@@ -1,6 +1,6 @@
 {
     "name": "cedcommerce/fnacapiclient",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "description": "Simple PHP wrapper for FNAC API",
     "require": {
         "zendframework/zend-http" : ">=2.3.2",
