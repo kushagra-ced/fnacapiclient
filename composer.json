@@ -3,15 +3,17 @@
     "version": "5.0.0",
     "description": "Simple PHP wrapper for FNAC API",
     "require": {
-        "zendframework/zend-http" : "*",
-        "zendframework/zend-uri" : "*",
-        "zendframework/zend-validator" : "*",
-        "monolog/monolog" : "*",
-        "symfony/finder" : "*",
-        "symfony/http-foundation": "*",
-        "symfony/serializer": "*",
-        "symfony/class-loader": "*",
-        "symfony/yaml" : "*"
+       "zendframework/zend-http" : "2.3.2",
+        "zendframework/zend-uri" : "2.3.2",
+        "zendframework/zend-validator" : "2.3.2",
+        "monolog/monolog" : "1.*",
+        "symfony/finder" : "2.0.*",
+        "symfony/http-foundation": "2.3.*@dev",
+        "symfony/serializer": "2.8.*",
+        "symfony/class-loader": "2.0.4",
+        "symfony/yaml" : "2.0.*",
+        "twbs/bootstrap": "^3.3",
+        "components/jquery": "^2.2"
     },
     "autoload": {
         "psr-4": {
