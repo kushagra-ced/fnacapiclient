@@ -8,7 +8,7 @@
         "zendframework/zend-validator" : ">=2.10.1",
         "monolog/monolog" : ">=1.17",
         "symfony/finder" : ">=3.0",
-        "symfony/http-foundation": ">=4.0",
+        "symfony/http-foundation": ">=3.4-dev",
         "symfony/serializer": ">=2.8",
         "symfony/class-loader": ">=2.0.4",
         "symfony/yaml" : ">=3.0"
