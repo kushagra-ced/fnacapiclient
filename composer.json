@@ -1,17 +1,17 @@
 {
     "name": "cedcommerce/fnacapiclient",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "Simple PHP wrapper for FNAC API",
     "require": {
-        "zendframework/zend-http" : ">=2.3.2",
-        "zendframework/zend-uri" : ">=2.3.2",
-        "zendframework/zend-validator" : ">=2.10.1",
-        "monolog/monolog" : ">=1.17",
-        "symfony/finder" : ">=4.0",
-        "symfony/http-foundation": ">=4.0",
-        "symfony/serializer": ">=2.8",
-        "symfony/class-loader": ">=2.0.4",
-        "symfony/yaml" : ">=3.0"
+        "zendframework/zend-http" : "*",
+        "zendframework/zend-uri" : "*",
+        "zendframework/zend-validator" : "*",
+        "monolog/monolog" : "*",
+        "symfony/finder" : "*",
+        "symfony/http-foundation": "*",
+        "symfony/serializer": "*",
+        "symfony/class-loader": "*",
+        "symfony/yaml" : "*"
     },
     "autoload": {
         "psr-4": {
