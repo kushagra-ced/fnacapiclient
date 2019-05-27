@@ -15,7 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "FnacApiClient\\": "src/FnacApiClient/"
+            "FnacApiClient\\": "src/FnacApiClient/",
+            "FnacApiGui\\": "src/FnacApiGui/"
         }
     }
 }
