@@ -10,8 +10,7 @@
         "symfony/finder" : ">=3.0",
         "symfony/http-foundation": ">=3.4-dev",
         "symfony/serializer": ">=2.8",
-        "symfony/class-loader": ">=2.0.4",
-        "symfony/yaml" : "~3.4|~4.0"
+        "symfony/class-loader": ">=2.0.4"
     },
     "autoload": {
         "psr-4": {
