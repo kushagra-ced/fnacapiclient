@@ -213,8 +213,8 @@ class Client
     private function buildRequest($service)
     {
 
-        $encoder = new XmlEncoder();
-        $encoder->setRootNodeName($service->getServiceName());
+        $encoder = new XmlEncoder(["xml_root_node_name" => $service->getServiceName()]);
+        //$encoder->setRootNodeName($service->getServiceName()); //issue occurring
 
         $encoders = array('xml' => $encoder);
         $normalizers = array(new CustomNormalizer());
