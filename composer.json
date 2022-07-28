@@ -3,9 +3,9 @@
     "version": "6.6.2",
     "description": "Simple PHP wrapper for FNAC API",
     "require": {
-        "zendframework/zend-http" : ">=2.3.2",
-        "zendframework/zend-uri" : ">=2.3.2",
-        "zendframework/zend-validator" : ">=2.10.1",
+        "laminas/laminas-http" : ">=2.3.2",
+        "laminas/laminas-uri" : ">=2.3.2",
+        "laminas/laminas-validator" : ">=2.10.1",
         "monolog/monolog" : ">=1.17",
         "symfony/finder" : ">=3.0",
         "symfony/http-foundation": ">=3.4-dev",

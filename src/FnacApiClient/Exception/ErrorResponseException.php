@@ -10,7 +10,7 @@
 
 namespace FnacApiClient\Exception;
 
-use Zend\Http\Response;
+use Laminas\Http\Response;
 
 /**
  * ErrorResponseException class used when we get a response error

@@ -66,6 +66,10 @@ class OffersController extends Controller
         $offer->setQuantity($options['quantity']);
         $offer->setPrice($options['price']['price']);
 
+//        For Mike Scally client only
+        $offer->setAdherentPrice($options['adherent_price']['special_price']);
+        $offer->setPromotion($options['promotion_data']);
+
         $offer->setProductState($options['product_state']);
         $offer->setProductReferenceType($options['product_reference_type']);
         $offer->setProductReference($options['product_reference']);
@@ -74,6 +78,7 @@ class OffersController extends Controller
 
     public function submitBulkOffer($products) {
         $this->data = $this->model->submitBulkOffer($this->client, $products);
+        // echo "<pre>"; print_r($products); exit;
         $this->loadXmlUpdateData();
     }
 

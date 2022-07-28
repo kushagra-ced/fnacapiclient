@@ -74,6 +74,9 @@ class OffersQueryModel extends Model
       $offer->setQuantity($options['quantity']);
       $offer->setPrice($options['price']['price']);
 
+      //Mike Scally
+      $offer->setAdherentPrice($options['adherent_price']['special_price']);
+
       $offer->setProductState($options['product_state']);
       $offer->setProductReferenceType($options['product_reference_type']);
       $offer->setProductReference($options['product_reference']);

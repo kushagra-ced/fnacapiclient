@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\CustomNormalizer;
 
-use Zend\Http\Client as ZendClient;
+use Laminas\Http\Client as LaminasClient;
 
 use FnacApiClient\Service\Request\RequestService;
 use FnacApiClient\Exception\ErrorResponseException;
@@ -61,7 +61,7 @@ class SimpleClient extends Client
         
         $serializer = new Serializer(array(new CustomNormalizer()), array(new XmlEncoder()));
 
-        $zendClient = new ZendClient();
+        $laminasClient = new LaminasClient();
 
         parent::__construct($serializer, $zendClient);
     }

@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\CustomNormalizer;
 
-use Zend\Http\Client as ZendClient;
+use Laminas\Http\Client as LaminasClient;
 
 use FnacApiClient\Service\Request\RequestService;
 
@@ -33,7 +33,7 @@ class Client
 {
     const METHOD = 'POST';
     const ENCTYPE = 'text/xml';
-    const ADAPTER = 'Zend\Http\Client\Adapter\Curl';
+    const ADAPTER = 'Laminas\Http\Client\Adapter\Curl';
 
     /**
      * Serializer to convert xml to object and object to xml
@@ -45,7 +45,7 @@ class Client
     /**
      * Client to communicate with a REST WebService
      *
-     * @var Zend\Http\Client
+     * @var Laminas\Http\Client
      */
     private $streamClient = null;
 
@@ -81,10 +81,10 @@ class Client
      * Create a new Client
      *
      * @param Serializer $seriliazer : Serializer to convert xml to object or object to xml
-     * @param ZendClient $streamClient : A client to send and receive from a rest webservice
+     * @param LaminasClient $streamClient : A client to send and receive from a rest webservice
      * @param Logger $logger : A logger to log request and response, useful for debugging
      */
-    public function __construct(Serializer $serializer, ZendClient $streamClient, Logger $logger = null)
+    public function __construct(Serializer $serializer, LaminasClient $streamClient, Logger $logger = null)
     {
         $this->streamClient = $streamClient;
         $this->serializer = $serializer;
