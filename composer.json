@@ -1,6 +1,6 @@
 {
     "name": "cedcommerce/fnacapiclient",
-    "version": "6.6.2",
+    "version": "6.6.3",
     "description": "Simple PHP wrapper for FNAC API",
     "require": {
         "laminas/laminas-http" : ">=2.3.2",
